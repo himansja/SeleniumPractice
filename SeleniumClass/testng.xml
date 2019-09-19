@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener
+			class-name="testNG_scenarios_dummytestcases.TestNGListenerImplementation"></listener>
+	</listeners>
+	<test thread-count="5" name="Test">
+		<groups>
+			<run>
+				<!-- <include name="sanity"></include> <include name="regression"> </include> -->
+			</run>
+		</groups>
+		<classes>
+			<class name="testNG_scenarios_dummytestcases.TestDummy1">
+				<!-- <Methdods> <include name="boy"</include> <exclude name="dog" </exclude> 
+					</Methdods> -->
+			</class>
+			<class name="testNG_scenarios_dummytestcases.TestDummy2"></class>
+			<class name="testNG_scenarios_dummytestcases.TestDummyGrouping1"></class>
+			<class name="testNG_scenarios_dummytestcases.TestDummyGrouping2"></class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

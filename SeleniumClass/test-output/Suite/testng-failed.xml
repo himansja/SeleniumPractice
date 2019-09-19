@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="testNG_scenarios_dummytestcases.TestNGListenerImplementation"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="testNG_scenarios_dummytestcases.TestDummy2">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- testNG_scenarios_dummytestcases.TestDummy2 -->
+      <class name="testNG_scenarios_dummytestcases.TestDummy1">
+        <methods>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
+          <include name="skipMethod"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testNG_scenarios_dummytestcases.TestDummy1 -->
+      <class name="testNG_scenarios_dummytestcases.TestDummyGrouping1">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testNG_scenarios_dummytestcases.TestDummyGrouping1 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
